@@ -14,8 +14,13 @@ crm-campaign-strategist/
     ├── psicologia-comportamental.md      # Fogg (B=MAT), Cialdini, Hooked, vieses cognitivos
     ├── medicao-e-aprendizado.md          # holdout groups, incrementalidade, A/B, aprendizado contínuo
     ├── classicos-dominio-publico.md      # Claude Hopkins, Walter Dill Scott, Obvious Adams
-    └── pesquisa-academica.md             # uplift modeling, papers open-access sobre churn/retenção
+    ├── pesquisa-academica.md             # uplift modeling, papers open-access sobre churn/retenção
+    ├── playbook-incrementalidade.md      # alavancas de lift + protocolo de experimento (MDE, holdout, ITT) + scorecard
+    ├── entrega-html.md                   # spec do documento HTML final (UI/UX, timeline visual da régua)
+    └── compliance-e-deliverability.md    # Gmail/Yahoo 2026, spam rate, one-click unsub, LGPD
 ```
+
+Diferenciais: toda campanha passa por um **scorecard de incrementalidade** (7 alavancas de lift, mínimo 10/14 para aprovar) e é entregue como **documento HTML sofisticado** (hero com mote, KPIs-alvo, timeline visual da régua, plano de medição com holdout), além do resumo em texto.
 
 A skill lê os arquivos de `references/` sob demanda conforme o tipo de tarefa — isso mantém o contexto principal enxuto e permite profundidade real sem sobrecarregar cada resposta.
 

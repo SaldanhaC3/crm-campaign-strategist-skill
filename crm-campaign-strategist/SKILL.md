@@ -18,13 +18,16 @@ Consulte os arquivos em `references/` conforme o tipo de trabalho:
 - `references/medicao-e-aprendizado.md` — holdout groups, incrementalidade, A/B, e o protocolo de aprendizado contínuo com resultados enviados pelo usuário.
 - `references/classicos-dominio-publico.md` — princípios fundadores (Hopkins/Scientific Advertising, Walter Dill Scott, Obvious Adams): teste, especificidade, headline, sugestão, hábito.
 - `references/pesquisa-academica.md` — uplift modeling (persuadables vs do-not-disturbs), experimentos de campo sobre personalização, análise de sobrevivência para janelas de churn.
+- `references/playbook-incrementalidade.md` — OBRIGATÓRIO em toda campanha: alavancas de design que aumentam a probabilidade de lift, protocolo de experimento (MDE, holdout, intent-to-treat, anti-contaminação) e scorecard pré-lançamento.
+- `references/entrega-html.md` — OBRIGATÓRIO na entrega: especificação do documento HTML final (estrutura, UI/UX, timeline visual da régua).
+- `references/compliance-e-deliverability.md` — requisitos Gmail/Yahoo 2026, spam rate, one-click unsubscribe, LGPD e bases legais.
 
 ## Fluxo de trabalho
 
 1. **Diagnóstico**: identifique produto, público, objetivo (aquisição, ativação, engajamento, conversão, retenção, reativação), canais disponíveis e dados existentes. Se o usuário enviou dados (planilhas, slides, tabelas de conversão/engajamento), analise-os PRIMEIRO — eles têm prioridade sobre benchmarks genéricos.
 2. **Aprendizados anteriores**: verifique se existe `learnings/` no diretório de trabalho ou memória sobre o mesmo produto/segmento/público. Aplique o que já foi aprendido.
-3. **Estratégia**: defina segmentos (RFM ou comportamental), canal por segmento/etapa (dados próprios > benchmark), mote/conceito criativo, e a arquitetura da régua (gatilhos, timings, dias de descanso, condições de saída).
-4. **Entrega**: apresente a campanha como tabela de régua (dia/gatilho, canal, mote/assunto, objetivo, CTA, condição de saída) + racional estratégico + hipóteses a testar + plano de medição com grupo de controle.
+3. **Estratégia**: defina segmentos (RFM ou comportamental), canal por segmento/etapa (dados próprios > benchmark), mote/conceito criativo, e a arquitetura da régua (gatilhos, timings, dias de descanso, condições de saída). Aplique as alavancas de lift e preencha o scorecard de `playbook-incrementalidade.md` — se pontuar <10/14, redesenhe antes de entregar.
+4. **Entrega**: (a) resumo executivo em texto no chat; (b) **documento HTML final** seguindo `entrega-html.md` — hero com mote, KPIs-alvo, timeline visual da régua, cards por toque com princípio comportamental nomeado, segmentação/supressões, plano de medição com holdout e scorecard preenchido. Publicar como Artifact quando disponível; senão salvar o .html e enviá-lo ao usuário.
 5. **Aprendizado**: quando o usuário enviar resultados (slides, tabelas, apresentações), siga o protocolo em `references/medicao-e-aprendizado.md`: extraia insights, grave em `learnings/<produto-ou-segmento>.md` e cite esses aprendizados nas próximas campanhas do mesmo produto/segmento/público.
 
 ## Regras de ouro
@@ -37,3 +40,6 @@ Consulte os arquivos em `references/` conforme o tipo de trabalho:
 - Motes e copy devem ancorar em um princípio comportamental explícito (nomeie qual — escassez, prova social, loss aversion etc.).
 - Retenção mira persuadables, não "maior risco de churn" — e supressão (não mandar) é decisão estratégica válida (ver `pesquisa-academica.md`).
 - Seja específico na copy (números, fatos) e teste antes de escalar — generalidades não convencem (Hopkins, `classicos-dominio-publico.md`).
+- Métrica primária, MDE e holdout são definidos ANTES do envio (pré-registro); análise é intent-to-treat e o controle é suprimido de TODOS os canais da campanha.
+- Deliverability e base legal vêm antes da estratégia: complaint <0,1%, opt-in próprio (LGPD), one-click unsubscribe (ver `compliance-e-deliverability.md`).
+- Toda entrega final inclui o documento HTML (ver `entrega-html.md`) — nunca só texto.
