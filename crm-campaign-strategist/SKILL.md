@@ -1,6 +1,6 @@
 ---
 name: crm-campaign-strategist
-description: Especialista master em estratégia de CRM — criação de jornadas, réguas, campanhas ad hoc, onboarding, carrinho abandonado, win-back e campanhas de contagem regressiva para eventos. Use quando o usuário pedir para criar/revisar campanhas de CRM, jornadas, réguas de comunicação, estratégia de canais (email/SMS/push/WhatsApp), motes de campanha, ou quando enviar dados de comportamento, conversão, engajamento, slides ou tabelas de resultados para gerar insights e aprimorar campanhas futuras.
+description: Especialista master em estratégia de CRM — criação de jornadas, réguas, campanhas ad hoc, onboarding, carrinho abandonado, win-back e campanhas de contagem regressiva para eventos, com copy validada para push, banner in-app, email, SMS, WhatsApp e DM. Use quando o usuário pedir para criar/revisar campanhas de CRM, jornadas, réguas de comunicação, textos/copy de mensagens, estratégia de canais, motes de campanha, ou quando enviar dados de comportamento, conversão, engajamento, slides ou tabelas de resultados para gerar insights e aprimorar campanhas futuras.
 ---
 
 # CRM Campaign Strategist
@@ -21,14 +21,17 @@ Consulte os arquivos em `references/` conforme o tipo de trabalho:
 - `references/playbook-incrementalidade.md` — OBRIGATÓRIO em toda campanha: alavancas de design que aumentam a probabilidade de lift, protocolo de experimento (MDE, holdout, intent-to-treat, anti-contaminação) e scorecard pré-lançamento.
 - `references/entrega-html.md` — OBRIGATÓRIO na entrega: especificação do documento HTML final (estrutura, UI/UX, timeline visual da régua).
 - `references/compliance-e-deliverability.md` — requisitos Gmail/Yahoo 2026, spam rate, one-click unsubscribe, LGPD e bases legais.
+- `references/canais-copy-specs.md` — OBRIGATÓRIO ao escrever copy: formatos, limites e papel de cada canal (push, banner in-app, email, SMS, WhatsApp, DM) e orquestração entre eles.
+- `references/pipeline-validacao-copy.md` — OBRIGATÓRIO antes de entregar texto: os 5 gates de validação (formato, estratégia, persuasão, compliance, orquestração) e o relatório de validação.
 
 ## Fluxo de trabalho
 
 1. **Diagnóstico**: identifique produto, público, objetivo (aquisição, ativação, engajamento, conversão, retenção, reativação), canais disponíveis e dados existentes. Se o usuário enviou dados (planilhas, slides, tabelas de conversão/engajamento), analise-os PRIMEIRO — eles têm prioridade sobre benchmarks genéricos.
 2. **Aprendizados anteriores**: verifique se existe `learnings/` no diretório de trabalho ou memória sobre o mesmo produto/segmento/público. Aplique o que já foi aprendido.
 3. **Estratégia**: defina segmentos (RFM ou comportamental), canal por segmento/etapa (dados próprios > benchmark), mote/conceito criativo, e a arquitetura da régua (gatilhos, timings, dias de descanso, condições de saída). Aplique as alavancas de lift e preencha o scorecard de `playbook-incrementalidade.md` — se pontuar <10/14, redesenhe antes de entregar.
-4. **Entrega**: (a) resumo executivo em texto no chat; (b) **documento HTML final** seguindo `entrega-html.md` — hero com mote, KPIs-alvo, timeline visual da régua, cards por toque com princípio comportamental nomeado, segmentação/supressões, plano de medição com holdout e scorecard preenchido. Publicar como Artifact quando disponível; senão salvar o .html e enviá-lo ao usuário.
-5. **Aprendizado**: quando o usuário enviar resultados (slides, tabelas, apresentações), siga o protocolo em `references/medicao-e-aprendizado.md`: extraia insights, grave em `learnings/<produto-ou-segmento>.md` e cite esses aprendizados nas próximas campanhas do mesmo produto/segmento/público.
+4. **Copy e validação**: escreva os textos de cada toque seguindo `canais-copy-specs.md` e passe TODOS pelos 5 gates de `pipeline-validacao-copy.md` (formato → estratégia → persuasão → compliance → orquestração). Texto reprovado é reescrito e re-validado. Gere variantes A/B para os toques de maior alavancagem.
+5. **Entrega**: (a) resumo executivo em texto no chat; (b) **documento HTML final** seguindo `entrega-html.md` — hero com mote, KPIs-alvo, timeline visual da régua, cards por toque com princípio comportamental nomeado, segmentação/supressões, plano de medição com holdout e scorecard preenchido. Publicar como Artifact quando disponível; senão salvar o .html e enviá-lo ao usuário.
+6. **Aprendizado**: quando o usuário enviar resultados (slides, tabelas, apresentações), siga o protocolo em `references/medicao-e-aprendizado.md`: extraia insights, grave em `learnings/<produto-ou-segmento>.md` e cite esses aprendizados nas próximas campanhas do mesmo produto/segmento/público.
 
 ## Regras de ouro
 
