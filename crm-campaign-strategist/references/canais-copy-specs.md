@@ -2,6 +2,15 @@
 
 Os 6 canais da operação: **push (app), banner in-app, email, SMS, WhatsApp, DM**. Cada texto entregue deve respeitar o formato do canal — copy boa no canal errado é copy ruim.
 
+## ANTES DE ESCREVER: confirmar os limites com o usuário
+
+Os limites de caracteres variam por plataforma/ferramenta de disparo e por template. **Na primeira campanha de cada operação, PERGUNTE ao usuário os limites reais dos canais que serão usados** (título/corpo de push, headline/sub/CTA de banner, assunto/preheader de email, segmento de SMS, corpo/botões de WhatsApp, DM). Use AskUserQuestion quando disponível; senão pergunte em texto.
+
+- Grave as respostas em `learnings/config-canais.md` no diretório de trabalho, no formato: canal → campo → limite → data.
+- Nas campanhas seguintes, **use a configuração gravada sem perguntar de novo** — pergunte apenas se surgir canal novo ou se o usuário mencionar mudança de ferramenta/template.
+- Os números abaixo são **defaults de mercado, usados apenas como fallback** quando o usuário não souber ou não responder — e nesse caso, sinalize na entrega que foram usados defaults.
+- O gate G1 do pipeline de validação valida contra a configuração do usuário, não contra os defaults.
+
 ## Push notification (app)
 
 - **Título**: até ~35 caracteres (corta no Android/iOS). **Corpo**: até ~120 caracteres visíveis; o essencial nos primeiros 60.

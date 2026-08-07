@@ -11,7 +11,7 @@ Rascunho → G1 Formato → G2 Estratégia → G3 Persuasão → G4 Compliance �
 ## G1 — Formato do canal (objetivo, binário)
 
 Para cada mensagem, validar contra `canais-copy-specs.md`:
-- [ ] Dentro do limite de caracteres do canal (CONTAR de fato: título de push ≤35, SMS ≤160/segmento, headline de banner ≤40, assunto ≤50…).
+- [ ] Dentro do limite de caracteres do canal (CONTAR de fato), usando os limites informados pelo usuário em `learnings/config-canais.md`; se não existir, perguntar antes de validar (ver `canais-copy-specs.md`) — defaults de mercado só como fallback sinalizado.
 - [ ] Exatamente 1 CTA principal; CTA é verbo no imperativo.
 - [ ] Deep link/destino correto para a ação do toque (não homepage genérica).
 - [ ] Variáveis de personalização com fallback definido (`{{nome|você}}` — nunca "Olá , ").
