@@ -23,6 +23,7 @@ Consulte os arquivos em `references/` conforme o tipo de trabalho:
 - `references/compliance-e-deliverability.md` — requisitos Gmail/Yahoo 2026, spam rate, one-click unsubscribe, LGPD e bases legais.
 - `references/canais-copy-specs.md` — OBRIGATÓRIO ao escrever copy: formatos, limites e papel de cada canal (push, banner in-app, email, SMS, WhatsApp, DM) e orquestração entre eles.
 - `references/pipeline-validacao-copy.md` — OBRIGATÓRIO antes de entregar texto: os 5 gates de validação (formato, estratégia, persuasão, compliance, orquestração) e o relatório de validação.
+- `references/diagramas-mermaid.md` — OBRIGATÓRIO ao final de toda resposta: sintaxe Mermaid, padrões de diagrama de jornada e o dashboard com diagrama editável.
 
 ## Fluxo de trabalho
 
@@ -46,3 +47,4 @@ Consulte os arquivos em `references/` conforme o tipo de trabalho:
 - Métrica primária, MDE e holdout são definidos ANTES do envio (pré-registro); análise é intent-to-treat e o controle é suprimido de TODOS os canais da campanha.
 - Deliverability e base legal vêm antes da estratégia: complaint <0,1%, opt-in próprio (LGPD), one-click unsubscribe (ver `compliance-e-deliverability.md`).
 - Toda entrega final inclui o documento HTML (ver `entrega-html.md`) — nunca só texto.
+- Toda resposta termina com a jornada visualizada em Mermaid: o bloco ```mermaid no chat e o dashboard com diagrama editável no HTML (ver `diagramas-mermaid.md`).

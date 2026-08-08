@@ -19,7 +19,8 @@ crm-campaign-strategist/
     ├── entrega-html.md                   # spec do documento HTML final (UI/UX, timeline visual da régua)
     ├── compliance-e-deliverability.md    # Gmail/Yahoo 2026, spam rate, one-click unsub, LGPD
     ├── canais-copy-specs.md              # formatos e papel de cada canal: push, banner in-app, email, SMS, WhatsApp, DM
-    └── pipeline-validacao-copy.md        # 5 gates de validação de copy antes da entrega
+    ├── pipeline-validacao-copy.md        # 5 gates de validação de copy antes da entrega
+    └── diagramas-mermaid.md              # jornada visual em Mermaid.js + dashboard com diagrama editável
 ```
 
 Diferenciais: toda campanha passa por um **scorecard de incrementalidade** (7 alavancas de lift, mínimo 10/14 para aprovar) e é entregue como **documento HTML sofisticado** (hero com mote, KPIs-alvo, timeline visual da régua, plano de medição com holdout), além do resumo em texto.
